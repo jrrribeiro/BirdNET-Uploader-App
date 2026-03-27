@@ -1,11 +1,10 @@
-# BirdNET Uploader App
+﻿# BirdNET-Uploader-App
 
-BirdNET Uploader App is a Gradio application built to ingest BirdNET detections into Hugging Face Datasets in a safe and repeatable workflow.
+BirdNET-Uploader-App is a Gradio application for structured ingestion of BirdNET detections in multi-project workflows.
 
-It is designed for teams that need to move from local BirdNET outputs (CSV + audio segments) to a project-structured dataset ready for validation and long-term operations.
+It provides an operator-focused upload interface with deterministic key generation, resumable batch processing, index artifact creation, and audit-ready run reporting for Hugging Face Datasets.
 
 ## Objective
-
 This app centralizes ingestion for bioacoustics projects by:
 
 - matching BirdNET detection rows with segment files
@@ -105,3 +104,4 @@ python -m cli.hf_dataset_cli ingest-segments \
 ## Status
 
 Uploader workflow is implemented and ready for staged validation in real project datasets.
+
